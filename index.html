@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">	
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>	
+
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		
+		<link rel="icon" type="image/png" href="images/microphone.png">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+		<title>Lazy Lion</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="index, nofollow">    
+	</head>
+	<body>
+
+    <div id="top"></div>
+		  <div class="darkcontainer">
+      </br>
+      </br>
+      </br>
+      </br>
+			  <div class="logo-container">
+				   <!--<div class="logo"></div>	-->
+				   <h1 class="text-center">Lazy Lion</h1>	
+           <h2 class="text-center">We deliver from places that won't!</h2>
+			  </div> 
+
+  			<!-- Begin Mail Chimp -->
+
+  			<div id="mc_embed_signup" class="mc-embed">
+  				<form action="http://lazyliondelivery.us8.list-manage.com/subscribe/post?u=cbe62296f5a86105ec9eb82d5&amp;id=87330d231c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  					
+            <!-- Begin Email Field -->
+            <div class="mc-field-group">
+  						<label for="mce-EMAIL" class="hide">Email Address</label>
+  						<input type="email" value="" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL", placeholder="Penn State Email Address">
+  					</div>
+            <!-- End Email Field -->
+  					
+            </br>
+
+            <!-- Begin First Name Field -->
+            <div class="mc-field-group">
+              <label for="mce-FNAME" class="hide">First Name </label>
+              <input type="text" value="" name="FNAME" class="required email form-control input-lg" id="mce-FNAME" placeholder="First Name">
+            </div>
+            <!-- End First Name Field -->
+
+            </br>
+
+            <!-- Begin Last Name Field -->
+            <div class="mc-field-group">
+              <label for="mce-LNAME" class="hide">Last Name </label>
+              <input type="text" value="" name="LNAME" class="required email form-control input-lg" id="mce-LNAME" placeholder="Last Name">
+            </div>
+            <!-- End Last Name Field -->  
+            </br>
+  					<div id="mce-responses" class="clear">
+  						<div class="response" id="mce-error-response" style="display:none"></div>
+  						<div class="response" id="mce-success-response" style="display:none"></div>
+  					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+  					<div style="position: absolute; left: -5000px;"><input type="text" name="b_cbe62296f5a86105ec9eb82d5_87330d231c" tabindex="-1" value=""></div>
+  					<div class="clear"><input type="submit" value="Get Early Access" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-block"></div>
+  				</form>
+  			</div>
+  			<!-- End Mail Chimp -->
+    </div>
+  </div>        
+</body>
+    
+    	    <script type="text/javascript">
+jQuery(document).ready(function($) {
+    // $() will work as an alias for jQuery() inside of this function
+$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 600, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+});
+});
+</script>
+
+</html>
